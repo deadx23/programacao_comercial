@@ -1,0 +1,34 @@
+#topo {
+	margin: 5px 0px 0px 5px;
+	border: 1px solid #000000;
+	height: 100px;
+	width: 1490px;
+}
+
+#menu {
+	position: absolute;
+	margin: 5px 0px 0px 5px;
+	border: 1px solid #000000;
+	height: 500px;
+	width: 300px;
+}
+
+#conteudo {
+	margin: 5px 0px 0px 310px;
+	border: 1px solid #000000;
+	height: relative;
+	width: 1175px;
+	padding: 5px;
+}
+	
+#area-mensagens {
+	border: 1px solid #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+.destaque {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #00DD66;
+	
+}
