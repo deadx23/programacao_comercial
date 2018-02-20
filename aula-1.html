@@ -11,21 +11,12 @@
 	</head>
 	
 	<body>
-		<div id="topo">
-		
-		</div>
-		
-		<div id="menu">
-		
-		</div>
-		
-		<div id="conteudo">
-			<h1>Caminhada.</h1>
+		<h1>Caminhada.</h1>
 		<p>Homem fazendo caminhada.</p>
 		<img src="img/brasao.gif" title="HP" height="80" width="80">
-		 
+		</br>
 		<a href="https://www.tuasaude.com/caminhada/" target="self">Site sobre caminhada!</a>
-		 
+		</br>
 		
 		<h2>Listas ordenadas</h2>
 		<ol>
@@ -39,7 +30,7 @@
 			<li>Item 2</li>
 			<li>Item 3</li>
 		</ul>
-		 
+		</br>
 		
 		<table border>
 			<caption>Descrição da tabela</caption>
@@ -68,103 +59,5 @@
 				</tr>
 			</tbody>
 		</table>
-		
-		 
-		<form action="/cadastro" method="post">
-			Login: <input type="text" name="login" placeholder="Digite seu login">
-			Senha: <input type="text" name="senha" placeholder="Digite sua senha">
-			
-			<input type="radio" name="sexo" value="1" checked> Masculino
-			<input type="radio" name="sexo" value="2" >Feminino,
-			
-			<input type="checkbox" name="vaiculo1" value="bike">Eu tenho uma bike
-			<input type="checkbox" name="vaiculo2" value="carro">Eu tenho uma carro
-			
-			Curso:
-			<select name="curso">
-				<option value="1">Ciência da Computação</option>
-				<option value="2">Direito</option>
-				<option value="3">Engenharia Elétrica</option>
-				<option value="4">Medicina</option>
-			</select>
-			
-			Mensagem: <textarea name="message" rows="10" cols="30"></textarea>
-			Idade: <input type="number" name="idade" min="0" max="100" step="1" value="30">
-			Data de Nascimento: <input type="date" name="data_nascimento" min="2000-01-02" >
-			
-			Auto complete: <input list="cidade">
-			<datalist id="cidade">
-				<option>Araguatins</option>
-				<option>Araguaina</option>
-				<option>Augustinopolis</option>
-				<option>Palmas</option>
-				<option>Paraiso</option>
-				<option>Dianopolis</option>
-			</datalist>	
-			
-			<input type="hidden" name="country" value="Brasil">
-			
-			<input type="reset" value="Limpar">
-			<input type="submit" value="Enviar">
-			
-			<button type="button" onclick="alert('Hello World!')">Botao 01</button>
-			<button type="button" onclick="soma(5,10);">Botao 02</button>			
-		</form>
-		
-		<div id="area-mensagens">
-			Elementos Bloco
-		</div>
-		Elementos <span class="destaque"> de </span> linha
-		
-		<h2>
-			<a href="w3schools.com/html/html_examples.asp" target="blank">
-				Outros Elementos!
-			</a>
-		</h2>
-		
-		
-		<button onclick="getLocation()">Clique aqui.</button>
-		<hid="demo">Localização</p>
-		<div id="mapholder"></div>
-
-		<script>
-		var x = document.getElementById("demo");
-
-		function getLocation() {
-			if (navigator.geolocation) {
-				navigator.geolocation.getCurrentPosition(showPosition, showError);
-			} else {
-				x.innerHTML = "Geolocation is not supported by this browser.";
-			}
-		}
-
-		function showPosition(position) {
-			var latlon = position.coords.latitude + "," + position.coords.longitude;
-			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-			+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
-			document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-		}
-		//To use this code on your website, get a free API key from Google.
-		//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-
-		function showError(error) {
-			switch(error.code) {
-				case error.PERMISSION_DENIED:
-					x.innerHTML = "User denied the request for Geolocation."
-					break;
-				case error.POSITION_UNAVAILABLE:
-					x.innerHTML = "Location information is unavailable."
-					break;
-				case error.TIMEOUT:
-					x.innerHTML = "The request to get user location timed out."
-					break;
-				case error.UNKNOWN_ERROR:
-					x.innerHTML = "An unknown error occurred."
-					break;
-			}
-		}
-		</script>		
-		</div>
-	
-		</body>
+	</body>
 </html>
